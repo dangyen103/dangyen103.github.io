@@ -1,0 +1,74 @@
+.home {
+  position: relative;
+  overflow: hidden;
+  .main {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    &-welcome {
+      h1 {
+        span {
+          font-size: 3.125rem;
+          text-transform: uppercase;
+        }
+      }
+      h2 {
+        span {
+          font-size: 2rem;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+      .title-sub {
+        font-size: 2.25rem;
+      }
+    }
+    &-image {
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      &--wrap {
+        bottom: 0;
+        height: 100%;
+        padding-top: 10%;
+        position: absolute;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+  &-path {
+    height: 100%;
+    left: -116px;
+    position: absolute;
+    top: -11px;
+    z-index: 1;
+    @media screen {
+
+    }
+    svg {
+      height: 100%;
+    }
+  }
+}
+
+// Theme color
+.home[data-theme="dark"] {
+  .main {
+    &-welcome {
+      h1 {
+        span {
+          &.name {
+            color: $color-orange-1;
+          }
+        }
+      }
+      h2 {
+        span {
+          color: $color-gray-2;
+        }
+      }
+    }
+  }
+}

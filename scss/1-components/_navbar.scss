@@ -1,0 +1,72 @@
+// Navbar
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 60px;
+  z-index: 9;
+  &-logo {
+    display: block;
+    text-align: center;
+  }
+  &-link {
+    display: block;
+    line-height: 4.5;
+    text-align: center;
+  }
+  &-social {
+    &--link {
+      display: block;
+      text-align: center;
+      line-height: 2.5;
+    }
+  }
+}
+
+// Responsive
+
+// Theme color
+
+.navbar[data-theme="dark"] {
+  background-color: $background-color-dark-2;
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1);
+  .navbar {
+    &-icon {
+      svg {
+        fill: $color-gray-1;
+      }
+    }
+    &-link {
+      &:hover,
+      &--active {
+        .navbar-icon {
+          svg {
+            fill: $color-orange-1;
+          }
+        }
+      }
+    }
+    &-social {
+      &--icon {
+        svg {
+          fill: $color-gray-2;
+        }
+      }
+      &--link {
+        &:hover {
+          .navbar-social--icon {
+            svg {
+              fill: $color-gray-1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

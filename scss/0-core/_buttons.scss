@@ -1,0 +1,87 @@
+
+.btn {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  transition: all ease 0.4s;
+  vertical-align: middle;
+  user-select: none;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    outline: 0;
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & { // stylelint-disable-line selector-no-qualifying-type
+    opacity: 0.5;
+  }
+}
+
+//
+// Button Theme
+//
+.btn-primary {
+  &[data-theme="dark"] {
+    background-color: $background-color-orange-1;
+    color: $color-white;
+
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $background-color-orange-2;
+      color: $color-white;
+    }
+  }
+}
+
+.btn-outline-primary {
+  &[data-theme="dark"] {
+    border: 2px solid $color-orange-1;
+    box-shadow: 0 0 6px rgba(255, 201, 91, 0.4);
+    color: $color-orange-1;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $background-color-orange-1;
+      color: $color-white;
+    }
+  }
+}
+
+
+//
+// Button Sizes
+//
+.btn-lg {
+  padding: 0.375rem 0.75rem;
+}
+
+//
+// Block button
+//
+
+.btn-block {
+  display: block;
+  width: 100%;
+
+  // Vertically space out multiple block buttons
+  + .btn-block {
+    margin-top: 0;
+  }
+}
