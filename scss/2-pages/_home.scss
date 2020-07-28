@@ -10,10 +10,14 @@
         span {
           font-size: 3.125rem;
           text-transform: uppercase;
+          &.name {
+            color: var(--color-fouth);
+          }
         }
       }
       h2 {
         span {
+          color: var(--text-color-third);
           font-size: 2rem;
           font-weight: 600;
           text-transform: uppercase;
@@ -21,6 +25,21 @@
       }
       .title-sub {
         font-size: 2.25rem;
+      }
+      @media screen and (max-width: 576px) {
+        h1 {
+          span {
+            font-size: 2.5rem;
+          }
+        }
+        h2 {
+          span {
+            font-size: 1.5rem;
+          }
+        }
+        .title-sub {
+          font-size: 1.75rem;
+        }
       }
     }
     &-image {
@@ -32,8 +51,22 @@
         height: 100%;
         padding-top: 10%;
         position: absolute;
-        img {
+        svg {
           height: 100%;
+          feFlood {
+            flood-color: var(--home-image-circle-shadow);
+          }
+          #Path_654 {
+            fill: var(--home-image-path-fill);
+          }
+          #Ellipse_1 {
+            fill: var(--home-image-circle-fill);
+            stroke: var(--home-image-circle-stroke);
+            stroke-width: var(--home-image-circle-stroke-width);
+          }
+          #Ellipse_2, #Ellipse_3 {
+            fill: var(--color-third);
+          }
         }
       }
     }
@@ -44,29 +77,35 @@
     position: absolute;
     top: -11px;
     z-index: 1;
-    @media screen {
-
-    }
     svg {
       height: 100%;
+      fill: var(--home-path-fill);
     }
   }
-}
-
-// Theme color
-.home[data-theme="dark"] {
-  .main {
-    &-welcome {
-      h1 {
-        span {
-          &.name {
-            color: $color-orange-1;
-          }
-        }
+  // Responsive
+  @media screen and (max-width: 992px) {
+    overflow-x: hidden;
+    overflow-y: auto;
+    .home-path {
+      left: 116px;
+      top: 0;
+      transform: rotate(30deg);
+    }
+    .main {
+      &-welcome {
+        padding: 6rem 2rem 3rem 2rem;
       }
-      h2 {
-        span {
-          color: $color-gray-2;
+      &-image {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 0 2rem 0 2rem;
+        &--wrap {
+          max-width: 371px;
+          position: unset;
+          svg {
+            width: 100%;
+          }
         }
       }
     }

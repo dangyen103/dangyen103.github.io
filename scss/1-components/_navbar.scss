@@ -1,6 +1,8 @@
 // Navbar
 
 .navbar {
+  background-color: var(--navbar-background-color);
+  box-shadow: 0 3px 6px var(--navbar-box-shadow-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,59 +13,111 @@
   top: 0;
   width: 60px;
   z-index: 9;
+  nav {
+    margin-top: 2rem;
+  }
+  &-icon {
+    svg {
+      fill: var(--navbar-icon-color-primary);
+    }
+  }
   &-logo {
     display: block;
+    margin-top: 1.5rem;
     text-align: center;
+    svg {
+      fill: var(--color-primary);
+    }
   }
   &-link {
     display: block;
     line-height: 4.5;
     text-align: center;
+    &:hover,
+    &--active {
+      .navbar-icon {
+        svg {
+          fill: var(--color-primary);
+        }
+      }
+    }
   }
   &-social {
+    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+    &--icon {
+      svg {
+        fill: var(--navbar-icon-color-secondary);
+      }
+    }
     &--link {
       display: block;
       text-align: center;
       line-height: 2.5;
-    }
-  }
-}
-
-// Responsive
-
-// Theme color
-
-.navbar[data-theme="dark"] {
-  background-color: $background-color-dark-2;
-  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1);
-  .navbar {
-    &-icon {
-      svg {
-        fill: $color-gray-1;
-      }
-    }
-    &-link {
-      &:hover,
-      &--active {
-        .navbar-icon {
+      &:hover {
+        .navbar-social--icon {
           svg {
-            fill: $color-orange-1;
+            fill: var(--navbar-icon-color-primary);
           }
         }
       }
     }
-    &-social {
-      &--icon {
+  }
+  // Responsive
+  @media only screen and (max-width: 992px) {
+    align-items: center;
+    flex-direction: row;
+    height: 48px;
+    overflow-y: hidden;
+    width: 100%;
+    nav {
+      display: flex;
+      margin: 0 1rem 0 1rem;
+    }
+    .navbar {
+      &-logo {
+        margin-left: 2rem;
+        margin-top: 0;
         svg {
-          fill: $color-gray-2;
+          height: 32px;
         }
       }
-      &--link {
-        &:hover {
-          .navbar-social--icon {
-            svg {
-              fill: $color-gray-1;
-            }
+      &-link {
+        line-height: 1;
+        min-width: 64px;
+      }
+      &-social {
+        display: flex;
+        margin: 0 2rem 0 0;
+        &--link {
+          line-height: 1;
+          &:first-child {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    nav {
+      flex: 1;
+    }
+    .navbar {
+      &-logo {
+        margin-left: 1rem;
+      }
+      &-link {
+        flex-grow: 1;
+        min-width: auto;
+        &:first-child {
+          display: none;
+        }
+      }
+      &-social {
+        margin: 0 1rem 0 0;
+        &--link {
+          &:first-child {
+            margin-right: 0.75rem;
           }
         }
       }
