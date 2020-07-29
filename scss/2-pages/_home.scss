@@ -1,6 +1,4 @@
 .home {
-  position: relative;
-  overflow: hidden;
   .main {
     position: absolute;
     top: 0;
@@ -50,6 +48,7 @@
         bottom: 0;
         height: 100%;
         padding-top: 10%;
+        padding-bottom: 0;
         position: absolute;
         svg {
           height: 100%;
@@ -84,8 +83,6 @@
   }
   // Responsive
   @media screen and (max-width: 992px) {
-    overflow-x: hidden;
-    overflow-y: auto;
     .home-path {
       left: 116px;
       top: 0;

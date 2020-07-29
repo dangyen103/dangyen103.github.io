@@ -1,1 +1,113 @@
 @import "home";
+
+// Page
+.page {
+  background-color: var(--backgroung-color-primary);
+  margin-left: 60px;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: calc(100% - 60px);
+  .main {
+    height: 100vh;
+    width: 100%;
+    &-content {
+      padding: 6rem;
+      &--title {
+        color: var(--color-secondary);
+        font-size: 2.125rem;
+        font-weight: 600;
+      }
+      @media screen and (max-width: 992px) {
+        padding: 1rem 2rem 3rem 2rem;
+      }
+    }
+    &-image {
+      height: 100%;
+      &--wrap {
+        height: 100%;
+        svg {
+          height: 100%;
+        }
+        @media screen and (max-width: 992px) {
+          padding: 0 2rem;
+          svg {
+            min-height: 460px;
+          }
+        }
+      }
+    }
+  }
+  &-path {
+    position: absolute;
+    z-index: 1;
+    svg {
+      fill: var(--page-path-fill);
+    }
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  // Custom
+  &.about {
+    .main-col {
+      &:first-child {
+        align-items: center;
+        display: flex;
+        height: calc(100% - 102px);
+      }
+    }
+    .main-image--wrap {
+      padding-bottom: 15%;
+    }
+  }
+  &.skills {
+    .main-col {
+      &:first-child {
+        align-items: center;
+        display: flex;
+      }
+    }
+    .main-image--wrap {
+      svg {
+        #tree-canopy {
+          fill: var(--skills-tree-canopy-fill);
+          opacity: var(--skills-tree-canopy-opacity);
+        }
+        #trunk {
+          stroke: var(--skills-tree-trunk-stroke);
+        }
+        #strong {
+          fill: var(--skills-tree-text-strong-fill);
+        }
+        #basic {
+          fill: var(--skills-tree-text-basic-fill);
+        }
+      }
+      @media screen and (max-width: 992px) {
+        padding: 6rem 2rem 0 2rem;
+        svg {
+          min-height: 460px;
+        }
+      }
+      @media screen and (max-width: 576px) {
+        padding: 6rem 2rem 0 2rem;
+        svg {
+          min-height: 300px;
+        }
+      }
+    }
+  }
+
+  // Responsive
+  @media screen and (max-width: 992px) {
+    margin-left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    .main {
+      height: 100%;
+    }
+  }
+}

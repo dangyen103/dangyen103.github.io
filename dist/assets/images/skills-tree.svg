@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="694.579" height="631.125" viewBox="0 0 694.579 631.125">
+  <g id="skills-tree" transform="translate(-600.078 30.291)">
+    <path id="tree-canopy" d="M4701.919,2184.8s-114.481,28.03-157.217,12.169-123.465-82.606-108.365-140.341,23.094-79.675,10.393-102.769-75.056-137.41,6.928-174.36,353.685-142.26,530.816-28.175,122.339,189.74,77.306,233.273-1.192,131.245-37.077,177.582-98.773,59.571-170.365,39.941S4701.919,2184.8,4701.919,2184.8Z" transform="translate(-3812 -1730)" fill="#506b4d" opacity="0.28"/>
+    <g id="trunk" transform="translate(766.396 198.51)">
+      <path id="Path_13" data-name="Path 13" d="M4933.232,1950.985c-4.248,1.416-2.88,1.667,2.005,2.97a107.494,107.494,0,0,1,32.683,14.375c25.753,16.819-53.084-14.191-74.633-17.344s62.019,29.433,60.442,41.521-73.056-42.572-77.261-35.214,71.479,40.47,67.8,53.609-66.223-52.558-72.029-42.572,64.145,45.2,60.992,59.917-64.121-57.814-65.7-49.4,58.865,61.493,52.558,73.893-55.187-72.316-59.391-60.228,54.135,67.8,47.828,80.94-46.777-69.9-56.237-62.544,56.237,62.544,47.3,78.312-55.778-75.562-55.778-57.8,52.406,72.835,42.636,87.047-47.965-79.941-55.959-65.729,50.63,65.729,41.748,92.377-33.753-76.388-55.071-68.394,44.412,84.383,39.083,103.035-31.977-78.165-55.071-75.5,47.077,81.718,42.635,90.6-93.265,10.659-88.824,21.318,87.048-8.882,88.824,7.106-84.382.888-93.265,24.871,76.389-23.982,98.594-4.441-79.941,11.547-98.594,36.418,94.153,1.776,93.265,15.1-88.453-.482-93.265,11.058,99.924,21.4,91.791,30.01-86.362-6.7-87.558,1.435,76.313,17.7,87.558,12.44" transform="translate(-4624.349 -1949.855)" fill="none" stroke="#707070" stroke-width="1"/>
+      <path id="Path_14" data-name="Path 14" d="M4639.325,1950.626s-49.652,18.908-30.022,20.063,63.509-26.268,76.21-20.062-71.592,23.527-69.282,33.919,85.448-27.713,88.912-13.856-88.912,23.094-80.829,33.486,92.376-28.868,97-8.083-81.984,12.7-81.984,27.713,91.222-3.464,99.3,8.083-92.376,4.619-85.448,24.249,83.139-15.011,98.15,0-92.376,15.011-79.674,33.486,86.6-20.785,90.067-5.773-91.222,21.94-76.21,40.415,92.376-38.105,90.067-18.475-70.437,25.4-70.437,39.26,87.758-41.569,87.758-20.785-90.067,24.249-77.366,42.724,99.305-54.271,86.6-21.939-97,32.332-80.83,42.724,98.455-8.5,100.765-.419" transform="translate(-4604.711 -1949.711)" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+    <g id="skills">
+      <g id="strong">
+        <text id="CSS" transform="translate(688.103 75.223)" fill="#ccc" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">CSS</tspan></text>
+        <text id="Javascript" transform="translate(901.103 224.223)" fill="#ccc" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">Javascript</tspan></text>
+        <text id="HTML" transform="translate(780.103 123.223)" fill="#ccc" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">HTML</tspan></text>
+        <text id="Vue" transform="translate(926.103 151.223)" fill="#ccc" font-size="16" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">Vue</tspan></text>
+        <text id="VueX" transform="translate(875.103 88.223)" fill="#ccc" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">VueX</tspan></text>
+        <text id="Git" transform="translate(1180.103 151.223)" fill="#ccc" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">Git</tspan></text>
+        <text id="SCSS" transform="translate(775.103 41.223)" fill="#ccc" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">SCSS</tspan></text>
+        <text id="npm" transform="translate(1053.103 123.223)" fill="#ccc" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">npm</tspan></text>
+        <text id="UI_UX" data-name="UI/UX" transform="translate(1169.103 243.223)" fill="#ccc" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">UI/UX</tspan></text>
+        <text id="Bootstrap" transform="translate(636.103 141.223)" fill="#ccc" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">Bootstrap</tspan></text>
+        <text id="Photoshop" transform="translate(1106.103 335.223)" fill="#ccc" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">Photoshop</tspan></text>
+        <text id="Illustrator" transform="translate(749.103 427.223)" fill="#ccc" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">Illustrator</tspan></text>
+        <text id="Experience_Design" data-name="Experience Design" transform="translate(1044.103 421.223)" fill="#ccc" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">Experience Design</tspan></text>
+      </g>
+      <g id="basic">
+        <text id="PHP" transform="translate(1028.103 37.223)" fill="#999" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">PHP</tspan></text>
+        <text id="Laravel" transform="translate(911.103 18.223)" fill="#999" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">Laravel</tspan></text>
+        <text id="MySQL" transform="translate(675.103 296.223)" fill="#707070" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">MySQL</tspan></text>
+        <text id="Wordpress" transform="translate(1095.103 70.223)" fill="#707070" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">Wordpress</tspan></text>
+        <text id="NoSQL" transform="translate(690.103 362.223)" fill="#707070" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">NoSQL</tspan></text>
+        <text id="NodeJS" transform="translate(668.103 218.223)" fill="#707070" font-size="14" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.12em"><tspan x="0" y="0">NodeJS</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
