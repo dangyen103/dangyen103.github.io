@@ -17,6 +17,12 @@
   --color-third: #FFDEDE;
   --color-fouth: #A7E0F9;
 
+  --contact-vn-map-fill: #A7E0F9;
+  --contact-vn-map-islands-text-fill: #FF8484;
+  --contact-vn-map-location-pin-fill: #FF8484;
+  --contact-vn-map-info-bg-fill: #FFB9B9;
+  --contact-vn-map-info-text-fill: #292929;
+
   --home-path-fill: #FFF6F6;
   --home-image-path-fill: #FFB9B9;
   --home-image-circle-fill: #CEF0FF;
@@ -53,6 +59,12 @@
   --color-secondary: #FFC95B;
   --color-third: #FFC95B;
   --color-fouth: #FFC95B;
+
+  --contact-vn-map-fill: #666666;
+  --contact-vn-map-islands-text-fill: #FFC95B;
+  --contact-vn-map-location-pin-fill: #FFC95B;
+  --contact-vn-map-info-bg-fill: #666666;
+  --contact-vn-map-info-text-fill: #f7f7f7;
 
   --home-path-fill: #333333;
   --home-image-path-fill: #FFCC66;
@@ -100,10 +112,14 @@ a {
 }
 
 // Input
-input {
+input, textarea {
   border: 0;
   outline: 0;
   box-shadow: 0;
+}
+
+textarea {
+  resize: none;
 }
 
 // Layout

@@ -13,6 +13,11 @@
   --color-secondary: #44C6FF;
   --color-third: #FFDEDE;
   --color-fouth: #A7E0F9;
+  --contact-vn-map-fill: #A7E0F9;
+  --contact-vn-map-islands-text-fill: #FF8484;
+  --contact-vn-map-location-pin-fill: #FF8484;
+  --contact-vn-map-info-bg-fill: #FFB9B9;
+  --contact-vn-map-info-text-fill: #292929;
   --home-path-fill: #FFF6F6;
   --home-image-path-fill: #FFB9B9;
   --home-image-circle-fill: #CEF0FF;
@@ -44,6 +49,11 @@
   --color-secondary: #FFC95B;
   --color-third: #FFC95B;
   --color-fouth: #FFC95B;
+  --contact-vn-map-fill: #666666;
+  --contact-vn-map-islands-text-fill: #FFC95B;
+  --contact-vn-map-location-pin-fill: #FFC95B;
+  --contact-vn-map-info-bg-fill: #666666;
+  --contact-vn-map-info-text-fill: #f7f7f7;
   --home-path-fill: #333333;
   --home-image-path-fill: #FFCC66;
   --home-image-circle-fill: none;
@@ -84,11 +94,15 @@ a {
   color: var(--color-primary);
 }
 
-input {
+input, textarea {
   border: 0;
   outline: 0;
   -webkit-box-shadow: 0;
           box-shadow: 0;
+}
+
+textarea {
+  resize: none;
 }
 
 .d-flex {
@@ -644,6 +658,7 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-primary {
+  background-color: transparent;
   border: 2px solid var(--color-primary);
   -webkit-box-shadow: 0 0 6px var(--box-shadow-color-primary);
           box-shadow: 0 0 6px var(--box-shadow-color-primary);
@@ -941,13 +956,18 @@ fieldset:disabled .btn {
 }
 
 .page .main-content {
-  padding: 6rem;
+  padding: 0 6rem;
 }
 
 .page .main-content--title {
   color: var(--color-secondary);
   font-size: 2.125rem;
   font-weight: 600;
+}
+
+.page .main-content--desc {
+  font-size: 0.875rem;
+  color: var(--text-color-secondary);
 }
 
 @media screen and (max-width: 992px) {
@@ -975,6 +995,43 @@ fieldset:disabled .btn {
   .page .main-image--wrap svg {
     min-height: 460px;
   }
+}
+
+.page .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page .form-group {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.page .form-control {
+  background-color: var(--background-color-secondary);
+  border: 0;
+  border-radius: 0.625rem;
+  color: var(--text-color-primary);
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.page .form-control::-webkit-input-placeholder {
+  color: var(--text-color-placholder);
+}
+
+.page .form-control:-ms-input-placeholder {
+  color: var(--text-color-placholder);
+}
+
+.page .form-control::-ms-input-placeholder {
+  color: var(--text-color-placholder);
+}
+
+.page .form-control::placeholder {
+  color: var(--text-color-placholder);
 }
 
 .page-path {
@@ -1046,6 +1103,53 @@ fieldset:disabled .btn {
     padding: 6rem 2rem 0 2rem;
   }
   .page.skills .main-image--wrap svg {
+    min-height: 300px;
+  }
+}
+
+.page.contact .main-col:first-child {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page.contact .main-image--wrap svg #map {
+  fill: var(--contact-vn-map-fill);
+}
+
+.page.contact .main-image--wrap svg #islands-text {
+  fill: var(--contact-vn-map-islands-text-fill);
+}
+
+.page.contact .main-image--wrap svg #location-pin-bg {
+  fill: var(--contact-vn-map-location-pin-fill);
+}
+
+.page.contact .main-image--wrap svg #info-bg {
+  fill: var(--contact-vn-map-info-bg-fill);
+}
+
+.page.contact .main-image--wrap svg #mail, .page.contact .main-image--wrap svg #address {
+  fill: var(--contact-vn-map-info-text-fill);
+}
+
+@media screen and (max-width: 992px) {
+  .page.contact .main-image--wrap {
+    padding: 6rem 2rem 0 2rem;
+  }
+  .page.contact .main-image--wrap svg {
+    min-height: 460px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page.contact .main-image--wrap {
+    padding: 6rem 2rem 0 2rem;
+  }
+  .page.contact .main-image--wrap svg {
     min-height: 300px;
   }
 }

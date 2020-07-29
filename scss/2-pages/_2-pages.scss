@@ -12,11 +12,15 @@
     height: 100vh;
     width: 100%;
     &-content {
-      padding: 6rem;
+      padding: 0 6rem;
       &--title {
         color: var(--color-secondary);
         font-size: 2.125rem;
         font-weight: 600;
+      }
+      &--desc {
+        font-size: 0.875rem;
+        color: var(--text-color-secondary);
       }
       @media screen and (max-width: 992px) {
         padding: 1rem 2rem 3rem 2rem;
@@ -35,6 +39,25 @@
             min-height: 460px;
           }
         }
+      }
+    }
+  }
+  .form {
+    &-row {
+      display: flex;
+    }
+    &-group {
+      flex-grow: 1;
+    }
+    &-control {
+      background-color: var(--background-color-secondary);
+      border: 0;
+      border-radius: 0.625rem;
+      color: var(--text-color-primary);
+      padding: 0.75rem;
+      width: 100%;
+      &::placeholder {
+        color: var(--text-color-placholder);
       }
     }
   }
@@ -83,6 +106,45 @@
         }
         #basic {
           fill: var(--skills-tree-text-basic-fill);
+        }
+      }
+      @media screen and (max-width: 992px) {
+        padding: 6rem 2rem 0 2rem;
+        svg {
+          min-height: 460px;
+        }
+      }
+      @media screen and (max-width: 576px) {
+        padding: 6rem 2rem 0 2rem;
+        svg {
+          min-height: 300px;
+        }
+      }
+    }
+  }
+  &.contact {
+    .main-col {
+      &:first-child {
+        align-items: center;
+        display: flex;
+      }
+    }
+    .main-image--wrap {
+      svg {
+        #map {
+          fill: var(--contact-vn-map-fill);
+        }
+        #islands-text {
+          fill: var(--contact-vn-map-islands-text-fill);
+        }
+        #location-pin-bg {
+          fill: var(--contact-vn-map-location-pin-fill);
+        }
+        #info-bg {
+          fill: var(--contact-vn-map-info-bg-fill);
+        }
+        #mail, #address {
+          fill: var(--contact-vn-map-info-text-fill);
         }
       }
       @media screen and (max-width: 992px) {
